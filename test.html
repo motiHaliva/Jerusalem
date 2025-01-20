@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="gallery.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <span>Tour</span>
+                <span>JERUSALEM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="container">Jerusalem Views</h1>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column align-items-center">
+                    <img class="w-100 object-fit-cover" id="modalImage" src="" alt="Image">
+                    <button type="button" class="btn btn-secondary mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="row justify-content-center">
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        src="https://images.pexels.com/photos/15422440/pexels-photo-15422440/free-photo-of-a-narrow-street-with-a-stone-wall-and-a-stone-bench.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        src="https://images.pexels.com/photos/8867661/pexels-photo-8867661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal" src="images/umbrellas.jpg">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal" src="images/market3.jpeg">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal" src="images/street2.jpg">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        src="https://images.unsplash.com/photo-1556861321-b7a1e5b1c291?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal" src="images/bridge.jpeg">
+                </figure>
+            </div>
+
+            <div data-aos="zoom-out" data-aos-duration="1500" class="col-sm-11 col-md-5 col-lg-3 mt-3 object-fit-cover">
+                <figure>
+                    <img class="w-100" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        src="https://images.unsplash.com/photo-1542317803-0fc679478393?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </figure>
+            </div>
+
+            <iframe class="col-md-5 col-sm-11 m-4" data-aos="fade-right" data-aos-duration="1500" width="942"
+                height="530" src="https://www.youtube.com/embed/at-duqowm9c" title="ירושלים בלילה יפה. הליכה במרכז העיר"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe class="col-md-5 col-sm-11 m-4" data-aos="fade-left" data-aos-duration="1500" width="942"
+                height="530" src="https://www.youtube.com/embed/4z2xoTa4d0A"
+                title="Jerusalem Travel Guide: 13 BEST Things to do in Jerusalem, Israel" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe class="col-9 col-sm-11 m-4" data-aos="zoom-in-up" data-aos-duration="1500" width="942" height="530"
+                src="https://www.youtube.com/embed/728II869JfM" title="הארת ירושלים. טיול בעיר היפה בלילה."
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white d-flex justify-content-between p-3 mt-5">
+        <p class="d-flex align-items-center m-0">All rights reserved @ Hadas Haliva 2023</p>
+        <div>
+            <p class="text-center mb-2">stay connected</p>
+            <div class="d-flex">
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-facebook-square me-4 text-white" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-instagram me-4 text-white" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-twitter me-4 text-white" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-youtube-play text-white" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

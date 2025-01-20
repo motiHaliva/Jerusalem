@@ -1,0 +1,241 @@
+@import url("colors.css");
+/* main{
+    min-height: 100px;
+} */
+
+main {
+    gap: 60px;
+    flex-direction: column;
+}
+
+.main1 {
+    background-color: var(--secondary_2);
+    background-color: whitesmoke;
+}
+
+.myCarusel {
+    padding: 0;
+    width: 100%;
+    animation: slideUpCarousel 0.5s;
+
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.main2 {
+    background-color: var(--secondary_2);
+    background-color: whitesmoke;
+    /* min-height: 600px; */
+}
+
+.main2 .container {
+    gap: 80px;
+}
+
+.cards1,
+.cards2 {
+    font-family: 'Rubik Maps', serif;
+    flex-wrap: wrap;
+    /* min-height: 500px; */
+    width: 100%;
+    gap: 5px;
+    /* animation: slideUp-LTR 1s ease-out; */
+
+    /* chatGPT */
+    opacity: 0;
+    /* מוסתר */
+    transform: translatey(30%);
+    /* מחוץ למסך */
+    transition: opacity 0.3s ease-out, transform 1s ease-out;
+}
+
+.cards2.visible,
+.cards1.visible {
+    opacity: 1;
+    /* גלוי */
+    transform: translatey(0);
+    /* בתוך המסך */
+}
+
+.myCard {
+    /* border: 2px solid forestgreen; */
+    border-top: 10px solid var(--primary_2);
+    border-bottom: 10px solid var(--primary_2);
+    min-height: 450px;
+    justify-content: end;
+    background-position: center center;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.cards1 .myCard:hover,
+.cards2 .myCard:hover {
+    flex: 3;
+}
+
+.cards1 .card1 {
+    background-image: url("../images/market2.jpg");
+    flex: 1;
+}
+
+.cards1 .card2 {
+    background-image: url("../images/gallery/tunnel.jpg");
+    background-position: center right;
+    flex: 1;
+}
+
+.cards2 .card3 {
+    background-image: url("../images/egged.jpg");
+    /* background-position: center right; */
+    flex: 1;
+}
+
+.cards1 .card4 {
+    background-image: url("../images/יד\ ושם.jpg");
+    flex: 1;
+}
+
+.cards1 .card5 {
+    background-image: url("../images/david.jpg");
+    flex: 1;
+}
+
+/* cards2 */
+.cards2 .card1 {
+    background-image: url("../images/canter-staition.jpg");
+    flex: 1;
+}
+
+.cards2 .card2 {
+    background-image: url("../images/train3.jpeg");
+    background-position: center right;
+    flex: 1;
+}
+
+.cards1 .card3 {
+    background-image: url("../images/Jerusalén\,\ Israel.jpeg");
+    background-position: center right;
+    flex: 1;
+}
+
+.cards1 .card4 {
+    background-image: url("../images/יד\ ושם.jpg");
+    flex: 1;
+}
+
+.cards2 .card5 {
+    background-image: url("../images/gallery/bride3.webp");
+    flex: 1;
+}
+
+.myCard h4 {
+    color: var(--secondary_2);
+    font-size: x-large;
+
+}
+
+.myCard h4:hover {
+    color: var(--primary);
+}
+
+.myCard a {
+    text-decoration: none;
+    direction: rtl;
+}
+
+.text-card {
+    color: var(--secondary_2);
+    min-height: 450px;
+    padding: 4px;
+    /* flex: 2; */
+    align-items: center;
+    background-color: var(--primary_2);
+
+    h2 {
+        margin: 0;
+        padding: 20px;
+        direction: rtl;
+    }
+}
+
+.numbers {
+    gap: 5px;
+}
+
+.information .container {
+    height: 800px;
+}
+
+.jerusalem-number {
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    border: 3px solid var(--primary);
+    background-color: var(--secondary_2);
+    justify-content: space-between;
+    /* chatGPT */
+    opacity: 0;
+    /* מוסתר */
+    transform: translatey(100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.jerusalem-number.visible {
+    opacity: 1;
+    /* גלוי */
+    transform: translatey(0);
+    /* בתוך המסך */
+}
+
+.cards3 {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    border-top: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    color: rgb(56, 33, 2);
+    direction: rtl;
+    font-weight: bold;
+    opacity: 80%;
+    padding: 3px;
+    border-radius: 3%;
+    background-color: var(--secondary_2);
+    /* border-radius: 20%; */
+    height: 150px;
+    box-shadow: 5px 5px 10px 1px rgb(71, 69, 69);
+    flex: 1;
+    padding: 6px;
+    flex-direction: column;
+    position: relative;
+
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        position: absolute;
+        top: 1px;
+        width: 50%;
+        margin: auto;
+
+        margin-bottom: 10px;
+        /* border: 3px solid red; */
+    }
+
+}
+
+.cards3 .fa {
+    font-size: 300%;
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+}

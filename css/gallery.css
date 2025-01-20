@@ -1,0 +1,191 @@
+
+  * { 
+    box-sizing: border-box; 
+  } 
+  
+  body {   
+    background-image: url("https://media.istockphoto.com/id/480739221/photo/background-of-ancient-wall.jpg?s=1024x1024&w=is&k=20&c=SuCBo_CQ6OVskepUNbpx2N78TGHTthXAgjhQoISxiyw="); 
+    background-color: rgba(255, 255, 255, 0.596); 
+    background-blend-mode: lighten; 
+  } 
+  
+  main .container {  
+    animation: slide-up-y 1s;   
+    max-width: 1200px;   
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  } 
+  
+  @keyframes slide-up-y {   
+    from {     
+      transform: translateY(100%);     
+      opacity: 0;   
+    }   
+    to {     
+      transform: translateY(0%);     
+      opacity: 1;   
+    } 
+  } 
+  #img1 { background-image: url("../images/20141271283453_Big.jpg"); }
+#img2 { background-image: url("../images/20190810_090307-qa7uxiz7ssnqfu6kw4qpi428gvb6e69t2jeuxuc8f4.jpg"); }
+#img3 { background-image: url("../images/318749-500-15-08-18-PR.jpg.webp"); }
+#img4 { background-image: url("../images/342190130.jpg"); }
+#img5 { background-image: url("../images/70381240100099980652no.jpg"); }
+#img6 { background-image: url("../images/bridge.jpeg"); }
+#img7 { background-image: url("../images/Chords Bridge, Santiago Calatrava.jpeg"); }
+#img8 { background-image: url("../images/closeup-industrial-pipelines-around-factor_951562-7704.jpg"); }
+#img9 { background-image: url("../images/dark.jpg"); }
+#img10 { background-image: url("../images/dreamstime_m_107441744_The_Western_Wall_Tunnels_4fd3a067bc.jpg"); }
+#img11 { background-image: url("../images/DSC06060.jpg"); }
+#img12 { background-image: url("../images/ed09b8a5-91f7-4fa7-8153-72a368367e2d.jpeg"); }
+#img13 { background-image: url("../images/favicon.jpg"); }
+#img14 { background-image: url("../images/hotel.jpg"); }
+#img15 { background-image: url("../images/hotel2.jpg"); }
+#img16 { background-image: url("../images/jaffa.jpg"); }
+#img17 { background-image: url("../images/light.jpg"); }
+  
+  .images {   
+    display: flex;   
+    flex-wrap: wrap;   
+    gap: 15px;   
+    width: 100%;
+    justify-content: center;
+  } 
+  
+  h1 { 
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+    margin: auto;
+    text-align: center;
+  } 
+  
+  .images a {   
+    display: block;   
+    width: 100%;   
+    height: 100%;   
+    background-size: cover;   
+    transition: 2000ms;  
+  } 
+  
+  .images div {     
+    width: 18.5%;   
+    height: 220px;   
+    border-radius: 10%;   
+    overflow: hidden; 
+    display: grid;
+  } 
+  
+  .images a:hover {   
+    transform: scale(1.2, 1.2); 
+  } 
+  
+
+  
+  .linksYou { 
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 15px;
+  } 
+  
+  .linksYou iframe { 
+    width: 45%; 
+    height: 330px; 
+    margin: 20px 0;  
+  } 
+  
+  .image-view {     
+    display: none;     
+    position: fixed;     
+    top: 0;     
+    left: 0;     
+    width: 100%;     
+    height: 100%;     
+    background-color: rgba(0, 0, 0, 0.8);     
+    z-index: 1999;     
+    justify-content: center;     
+    align-items: center;   
+  }      
+  
+  .image-view:target {     
+    display: flex;    
+  }      
+  
+  .image-container {     
+    background-color: white;     
+    width: 90%;
+    max-width: 800px;      
+    border-radius: 10px;     
+    display: flex;     
+    flex-direction: column;     
+    justify-content: center;     
+    border: 10px solid white;     
+    align-items: center;      
+  }      
+  
+  .image-container img {     
+    max-width: 100%;     
+    border-radius: 5px;   
+  }      
+  
+  .back-button {     
+    margin-top: 8px;     
+    padding: 8px 20px;     
+    background-color: white;     
+    color: rgb(33, 53, 85);     
+    border: 2px solid rgb(33, 53, 85);          
+    text-decoration: none;     
+    border-radius: 5px;     
+    transition: background-color 0.3s;   
+  }      
+  
+  .back-button:hover {     
+    border: 2px solid white;     
+    background-color: rgb(33, 53, 85);     
+    color: #fff;   
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    .images div {
+      width: 23%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .images div {
+      width: 31%;
+    }
+    
+    .linksYou iframe {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .images div {
+      width: 47%;
+    }
+    
+    .linksYou iframe {
+      width: 100%;
+    }
+    
+    .linksYou {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    .images div {
+      width: 100%;
+      height: 250px;
+    }
+    
+    .image-container {
+      width: 95%;
+    }
+  }

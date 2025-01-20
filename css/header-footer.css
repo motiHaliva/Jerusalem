@@ -1,0 +1,216 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+@import url("colors.css");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+    font-family: monospace, 'Heebo';
+    
+}
+.container-fuild{
+    width: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerh{
+    width: 90%;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header{
+    background-color: var(--primary);
+    position: sticky;
+    z-index: 1998;
+    top: 0;
+    margin-bottom: 5px;
+    color: white;
+}
+header .container{
+    gap: 7px;
+    justify-content: center;
+}
+.logo {
+
+ 
+    padding: 2px;
+    width: 7%;
+    /* justify-self: start; */
+    gap: 3px;
+}
+header img{
+    /* border: 3px solid rgb(0, 255, 132); */
+    width: 100%;
+    /* width: 150px; */
+    border-radius: 3px;
+}
+header h4{
+    display: none;
+    width: 100%;
+    margin: 0;
+    font-size: medium;
+    border-top: 2px dashed var(--primary_2);
+    border-bottom: 2px dashed var(--primary_2);
+    color: var(--secondary_2);
+}
+.desktop-menu{
+
+    flex-wrap: wrap;
+    flex: 6;
+    justify-self: center;
+
+}
+
+header ul{
+    /* border: 3px solid rgb(0, 89, 255); */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 60px;
+}
+header li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding-top:10px ;
+}
+
+header a{
+    color: var(--secondary_2);
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+}
+header h2{
+    transition: all 0.5s;
+    font-size: large;
+}
+header h2:hover{
+    transform: scale(1.2);
+}
+header .fa{
+    display: none;
+    color: var(--secondary_2);
+    font-size: large;
+    justify-self: end;
+    animation: rotate 1s;
+    transition: all 1s;
+    align-self: center;
+}
+header .fa:hover{
+    transform: rotate(360deg);
+}
+footer{
+    background-color: var(--primary);
+}
+footer .center{
+    color: var(--secondary_2);
+    color: rgb(243, 232, 232);
+}
+.links{
+ gap: 10px;   
+}
+footer a{
+    text-decoration: none;
+ 
+}
+footer .fas, footer .fab{
+    font-size: 20px;
+    color: white;
+}
+
+/* animation */
+@keyframes slideUpCarousel {
+    from {
+        transform: translatey(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+
+ .navbar {
+    display: none;
+} 
+
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+    .navbar{
+        display: flex;
+    }
+    .offcanvas {
+        width: 200px !important; 
+    }
+    
+    .navbar {
+        background-color: var(--primary) !important;
+        height: 40px; 
+        padding: 5px 15px; 
+    }
+    
+    .navbar-toggler {
+        background-color: white;
+        margin-right: auto;
+        padding: 4px 8px; 
+    }
+    .navbar-toggler-icon {
+        width: 20px; 
+        height: 20px;
+    }
+    
+    .offcanvas-title {
+        font-size: 1.1rem;
+    }
+    
+    .nav-link {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+        
+ 
+    }
+    .offcanvas-header {
+        padding: 10px 15px;
+    }
+    
+    .offcanvas-body {
+        padding: 5px;
+    }
+    
+    }
+    
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 40px;
+    }
+} 
