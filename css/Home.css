@@ -46,7 +46,7 @@ main {
     /* chatGPT */
     opacity: 0;
     /* מוסתר */
-    transform: translatey(30%);
+    transform:none;
     /* מחוץ למסך */
     transition: opacity 0.3s ease-out, transform 1s ease-out;
 }
