@@ -52,13 +52,12 @@ header .container{
  
     padding: 2px;
     width: 7%;
-    /* justify-self: start; */
     gap: 3px;
 }
 header img{
-    /* border: 3px solid rgb(0, 255, 132); */
+
     width: 100%;
-    /* width: 150px; */
+
     border-radius: 3px;
 }
 header h4{
@@ -79,7 +78,6 @@ header h4{
 }
 
 header ul{
-    /* border: 3px solid rgb(0, 89, 255); */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -137,8 +135,8 @@ footer .fas, footer .fab{
     font-size: 20px;
     color: white;
 }
+/* 
 
-/* animation */
 @keyframes slideUpCarousel {
     from {
         transform: translatey(-100%);
@@ -149,7 +147,7 @@ footer .fas, footer .fab{
         transform: translatey(0);
         opacity: 1;
     }
-}
+} */
 
 
  .navbar {
@@ -169,7 +167,8 @@ footer .fas, footer .fab{
         display: flex;
     }
     .offcanvas {
-        width: 200px !important; 
+        width: 150px !important;
+        background-color: rgba(221, 197, 197, 0.863); 
     }
     
     .navbar {
