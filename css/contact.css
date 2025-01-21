@@ -39,10 +39,13 @@ input{
     border: 2px solid var(--primary);
     animation: slideUpX 1.5s ease-out;
     width: 100%;
+     
+  
 
 }
 
 label{
+    text-align: center;
     display: block;
     color: var(--primary);
     animation: slideUpX 1.5s ease-out;

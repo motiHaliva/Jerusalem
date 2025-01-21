@@ -1,11 +1,10 @@
 @import url("colors.css");
-/* main{
-    min-height: 100px;
-} */
+
 
 main {
     gap: 60px;
     flex-direction: column;
+    margin: 0;
 }
 
 .main1 {
@@ -16,6 +15,7 @@ main {
 .myCarusel {
     padding: 0;
     width: 100%;
+    height: 570px;
     animation: slideUpCarousel 0.5s;
 
 }
@@ -25,54 +25,37 @@ main {
 }
 
 .main2 {
-    background-color: var(--secondary_2);
-    background-color: whitesmoke;
-    /* min-height: 600px; */
+   background-color: rgba(206, 196, 174, 0.178);
+
 }
 
 .main2 .container {
-    gap: 80px;
+    gap: 90px;
 }
 
-.cards1,
+ .cards1,
 .cards2 {
     font-family: 'Rubik Maps', serif;
     flex-wrap: wrap;
-    /* min-height: 500px; */
     width: 100%;
-    gap: 5px;
-    /* animation: slideUp-LTR 1s ease-out; */
+} 
 
-    /* chatGPT */
-    opacity: 0;
-    /* מוסתר */
-    transform: translatey(30%);
-    /* מחוץ למסך */
-    transition: opacity 0.3s ease-out, transform 1s ease-out;
-}
-
-.cards2.visible,
-.cards1.visible {
-    opacity: 1;
-    /* גלוי */
-    transform: translatey(0);
-    /* בתוך המסך */
-}
 
 .myCard {
-    /* border: 2px solid forestgreen; */
+   
     border-top: 10px solid var(--primary_2);
     border-bottom: 10px solid var(--primary_2);
     min-height: 450px;
     justify-content: end;
-    background-position: center center;
     background-size: cover;
     transition: all 1s;
+    
+
 }
 
 .cards1 .myCard:hover,
 .cards2 .myCard:hover {
-    flex: 3;
+    flex: 4;
 }
 
 .cards1 .card1 {
@@ -88,12 +71,11 @@ main {
 
 .cards2 .card3 {
     background-image: url("../images/egged.jpg");
-    /* background-position: center right; */
     flex: 1;
 }
 
 .cards1 .card4 {
-    background-image: url("../images/יד\ ושם.jpg");
+    background-image: url("");
     flex: 1;
 }
 
@@ -131,25 +113,25 @@ main {
 }
 
 .myCard h4 {
-    color: var(--secondary_2);
-    font-size: x-large;
-
+    font-size: x-large; 
+    font-weight: bolder;
+    color: burlywood;
+  
+   
 }
-
-.myCard h4:hover {
-    color: var(--primary);
+h4:hover{
+    font-weight: bold;
 }
 
 .myCard a {
+ 
     text-decoration: none;
     direction: rtl;
 }
 
 .text-card {
-    color: var(--secondary_2);
     min-height: 450px;
     padding: 4px;
-    /* flex: 2; */
     align-items: center;
     background-color: var(--primary_2);
 
