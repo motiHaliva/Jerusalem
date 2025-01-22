@@ -13,10 +13,10 @@ main{
 
 main .container{
     height: 88vh;
-    width: 1000px; 
+    width: 1000px;
 }
 .about{
-  
+    
     padding: 25px;
     direction: rtl;
     background-color: azure;
@@ -24,7 +24,7 @@ main .container{
     border-bottom: 10px solid var(--primary_2);
 }
 h2{
-    font-weight: bold;
+    font-weight:bold;
 }
 @media screen and (max-width: 480px) {
    main .container{
