@@ -83,8 +83,6 @@ main {
     background-image: url("../images/david.jpg");
     flex: 1;
 }
-
-/* cards2 */
 .cards2 .card1 {
     background-image: url("../images/canter-staition.jpg");
     flex: 1;
