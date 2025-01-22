@@ -24,7 +24,7 @@ body{
     align-items: center;
 }
 .containerh{
-    width: 90%;
+    width: 100%;
 }
 .container{
     width: 900px;
@@ -48,10 +48,8 @@ header .container{
     justify-content: center;
 }
 .logo {
-
- 
     padding: 2px;
-    width: 7%;
+    width: 7.4%;
     gap: 3px;
 }
 header img{
@@ -135,9 +133,9 @@ footer .fas, footer .fab{
     font-size: 20px;
     color: white;
 }
-/* 
 
-@keyframes slideUpCarousel {
+
+/* @keyframes slideUpCarousel {
     from {
         transform: translatey(-100%);
         opacity: 0;
@@ -147,7 +145,7 @@ footer .fas, footer .fab{
         transform: translatey(0);
         opacity: 1;
     }
-} */
+}  */
 
 
  .navbar {
@@ -180,7 +178,7 @@ footer .fas, footer .fab{
     .navbar-toggler {
         background-color: white;
         margin-right: auto;
-        padding: 4px 8px; 
+        padding: 3px 8px; 
     }
     .navbar-toggler-icon {
         width: 20px; 
@@ -206,10 +204,14 @@ footer .fas, footer .fab{
     }
     
     }
-    
+    @media only screen and (max-width: 680px) {
+        .logo{
+            width: 9%;
+        }
+    }
 
 @media only screen and (max-width: 480px) {
     .logo {
-        width: 40px;
+        width: 60px;
     }
 } 
